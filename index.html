@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-gg0yR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7v9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>Todays Weather</h1>
+    <div class="search">
+      <form id="search-form">
+        <input
+          id="city-input"
+          type="text"
+          placeholder="Enter a place"
+          autocomplete="off"
+          autofocus="on"
+        />
+        <input type="submit" value="Search" />
+        <button>Current</button>
+      </form>
+      <h2>Date</h2>
+      <h3 id="city">City</h3>
+      <i class="fa-regular fa-sun-cloud"></i>
+      <div class="container">
+        <div class="box">
+          <div class="column">
+            <div class="col-6" id="first">
+              Today it is:<br />
+              <span class="temperature" id="temperature">4</span>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+            <div class="col-6" id="second">
+              Precipitation 89% <br />
+              Humidity: 88% <br />
+              Wind: 5 mph
+            </div>
+          </div>
+        </div>
+        <div class="week">
+          <div class="row">
+            <div class="third">Sun <br />14°C | 11°C</div>
+            <div class="third">Mon <br />13°C | 3°C</div>
+            <div class="third">Tues <br />8°C | 1°C</div>
+            <div class="third">Wed <br />8°C | 4°C</div>
+            <div class="third">Thurs <br />10°C | 8°C</div>
+            <div class="third">Fri <br />13°C | 8°C</div>
+            <div class="third">Sat <br />11°C | 7°C</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
